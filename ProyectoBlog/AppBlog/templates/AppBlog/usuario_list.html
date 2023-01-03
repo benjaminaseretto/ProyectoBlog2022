@@ -1,0 +1,19 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    {% for usuarios in object_list %}
+        <p>{{usuarios.usu_nom}}</p>
+        <p>
+            <a href="{% url 'List Au' %} ">Ver</a>
+            <a href="{% url'Edit Au' usuarios.id %} ">Editar</a>
+            <a href="{% url'Delet Au' usuarios.id %} ">Borrar</a>
+        </p>
+    {%endfor%}
+
+{% endblock %}
+
+<a class="navbar-brand" href="{% url 'usu_nom'%}">Crear un nuevo articulo</a>

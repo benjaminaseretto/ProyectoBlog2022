@@ -1,0 +1,15 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+{{post.articulo}}
+{{post.codigo_articulo}}
+        
+            <a href="{% url 'List' %} ">Regresar</a>
+            
+     
+    
+
+{% endblock %}

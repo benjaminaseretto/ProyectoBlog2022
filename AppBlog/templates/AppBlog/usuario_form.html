@@ -1,0 +1,18 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+
+
+<form action =""  method="post">{% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <inpud type="submit" value = "Crear">
+
+</form>
+
+{% endblock %}

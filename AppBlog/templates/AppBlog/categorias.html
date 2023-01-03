@@ -1,0 +1,23 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Categorias</h1>
+    <p>Acá va la info de Categoria</p>
+    Ingrese la Categoria:
+    <br>
+    <form action="" method="POST">{% csrf_token %}
+        <table>
+            {{caFormulario.as_table}}
+        </table>
+        <input type="submit", value="Enviar">
+    </form>
+
+
+  
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Art Galery</h1>
+    <div class container>
+      <div class row>
+        <div div col-md-12 >
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src= "/AppBlog/static/AppBlog/assets/img/fondo.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/AppBlog/static/AppBlog/assets/img/fondo2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/AppBlog/static/AppBlog/assets/img/fondo3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+
+      </div>
+      
+
+
+
+    </div>
+    
+
+  
+
+{% endblock %}

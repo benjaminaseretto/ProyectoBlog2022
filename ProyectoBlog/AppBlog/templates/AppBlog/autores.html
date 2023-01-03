@@ -1,0 +1,23 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Autores</h1>
+    <p></p>
+
+    Ingrese un autor:
+    <br>
+    <form action="" method="POST">{% csrf_token %}
+        <table>
+            {{miFormulario.as_table}}
+        </table>
+        <input type="submit" value="Enviar">
+    </form>
+
+  
+
+{% endblock %}

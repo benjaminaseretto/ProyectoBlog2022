@@ -1,0 +1,19 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    Usu_ape : {{usu_ape}}
+    <br>
+
+    Post :
+    {% for autores in usuarios %}
+        {{usuario.usu_nom}}
+        {{usuario.usu_mail}}
+        <br>
+    {%endfor%}    
+  
+
+{% endblock %}

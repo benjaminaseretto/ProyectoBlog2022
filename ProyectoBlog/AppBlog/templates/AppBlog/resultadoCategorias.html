@@ -1,0 +1,19 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    Cat_id : {{cat_id}}
+    <br>
+
+    Categoria :
+    {% for categoria in categorias %}
+        {{categoria.cat_nom}}
+        {{categoria.cat_descripcion}}
+        <br>
+    {%endfor%}    
+  
+
+{% endblock %}
