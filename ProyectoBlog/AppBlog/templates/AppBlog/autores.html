@@ -6,17 +6,20 @@
 
 
     <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
-    <h1>Autores</h1>
+    <h1>Estamos buscando los Autores</h1>
     <p></p>
 
-    Ingrese un autor:
-    <br>
-    <form action="" method="POST">{% csrf_token %}
-        <table>
-            {{miFormulario.as_table}}
-        </table>
-        <input type="submit" value="Enviar">
-    </form>
+
+    {%if usuarios%}
+    
+    <ul>
+        {%for autores in usuarios%}
+            <li>Nombre: {{usuario.usu_nom}}</li>
+            <li>Comisión: {{usuario.usu_ape}}</li>
+            <li>Día: {{usuario.usu_mail}}</li>
+        {%endfor%}
+    </ul>
+    {%endif%}
 
   
 
